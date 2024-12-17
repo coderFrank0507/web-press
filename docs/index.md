@@ -3,25 +3,22 @@
 layout: home
 
 hero:
-  name: '欢迎来到我的文档博客'
-  text: ''
-  tagline: 持续学习，持续进步
+  name: 'Frank的文档博客'
+  text: 持续学习，无限进步
+  tagline: 好记性不如烂笔头
   image:
     src: /img/vampire.png
     atl: vampire
   actions:
     - theme: brand
-      text: Markdown Examples
-      link: /markdown-examples
-    - theme: alt
-      text: API Examples
-      link: /api-examples
+      text: 建站原因
+      link: /reason
 
 features:
-  - title: Feature A
-    details: Lorem ipsum dolor sit amet, consectetur adipiscing elit
-  - title: Feature B
-    details: Lorem ipsum dolor sit amet, consectetur adipiscing elit
-  - title: Feature C
-    details: Lorem ipsum dolor sit amet, consectetur adipiscing elit
+  - title: 💡 小建议
+    details: 选择永远大于努力
+  - title: 🧗 努力
+    details: 如果做一件事就努力把它做好
+  - title: 🤔 思考
+    details: 学会思考，不要人云亦云
 ---
