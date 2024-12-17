@@ -11,25 +11,20 @@ export default defineConfig({
     logo: '/img/favicon.ico',
     nav: [
       { text: '首页', link: '/' },
-      { text: 'Vue', link: '/vue/' }
+      { text: 'Vue', link: '/vue/测试' }
     ],
 
     sidebar: {
-      '/vue': {
-        base: '/测试',
-        items: [{ text: '测试', link: '/测试' }]
-      }
+      '/vue/': [
+        {
+          text: 'Vue记录',
+          items: [
+            { text: '测试', link: '/vue/测试' },
+            { text: '学习记录', link: '/vue/Vue3学习记录' }
+          ]
+        }
+      ]
     },
-
-    // sidebar: [
-    //   {
-    //     text: 'Examples',
-    //     items: [
-    //       { text: 'Markdown Examples', link: '/markdown-examples' },
-    //       { text: 'Runtime API Examples', link: '/api-examples' }
-    //     ]
-    //   }
-    // ],
 
     socialLinks: [{ icon: 'github', link: 'https://github.com/vuejs/vitepress' }],
 
