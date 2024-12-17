@@ -9,15 +9,18 @@ export default defineConfig({
   themeConfig: {
     // https://vitepress.dev/reference/default-theme-config
     logo: '/img/favicon.ico',
+    outline: { label: '目录', level: [2, 6] },
     nav: [
       { text: '首页', link: '/' },
-      { text: 'Vue', link: '/vue/测试' }
+      { text: 'Vue', link: '/vue/测试' },
+      { text: '个人信息', link: '/resume' }
     ],
 
     sidebar: {
       '/vue/': [
         {
           text: 'Vue记录',
+          collapsed: true,
           items: [
             { text: '测试', link: '/vue/测试' },
             { text: '学习记录', link: '/vue/Vue3学习记录' }
