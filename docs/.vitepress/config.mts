@@ -2,6 +2,8 @@ import { defineConfig } from 'vitepress';
 
 // https://vitepress.dev/reference/site-config
 export default defineConfig({
+  base: '/vite-press-docs/',
+  head: [['link', { rel: 'icon', href: '/vite-press-docs/img/favicon.ico' }]],
   title: 'Frank的文档',
   description: '无限进步',
   themeConfig: {
