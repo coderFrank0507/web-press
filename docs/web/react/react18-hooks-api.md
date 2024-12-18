@@ -301,7 +301,11 @@ export default App;
 **基本使用：**
 
 ```tsx
-const [state, dispatch] = useReducer((state, action) => {}, initialArg, init);
+const [state, dispatch] = useReducer(
+    (state, action) => {},
+    initialArg,
+    init
+  );
 ```
 
 **Params：**

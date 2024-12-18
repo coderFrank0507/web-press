@@ -1,4 +1,7 @@
 import { defineConfig } from 'vitepress';
+import js_ts$sidebar from './sidebar/js-ts';
+import vue$sidebar from './sidebar/vue';
+import react$sidebar from './sidebar/react';
 
 // https://vitepress.dev/reference/site-config
 export default defineConfig({
@@ -15,7 +18,7 @@ export default defineConfig({
       {
         text: '前端',
         items: [
-          { text: 'JS & TS', link: '/web/js-ts/useDefer白屏优化' },
+          { text: 'JS & TS', link: '/web/js-ts/首页白屏问题' },
           { text: 'Vue', link: '/web/vue/Vue基础' },
           { text: 'React', link: '/web/react/react18-hooks-api' }
         ]
@@ -24,34 +27,9 @@ export default defineConfig({
     ],
 
     sidebar: {
-      '/web/js-ts': [
-        {
-          text: '优化',
-          collapsed: true,
-          items: [{ text: '白屏优化', link: '/web/js-ts/useDefer白屏优化' }]
-        }
-      ],
-      '/web/vue/': [
-        { text: 'Vue基础', link: '/web/vue/Vue基础' },
-        {
-          text: 'Vue进阶',
-          collapsed: true,
-          items: [
-            { text: '使用冻结对象提升效率', link: '/web/vue/使用冻结对象提升效率' },
-            { text: '学习记录', link: '/web/vue/Vue3学习记录' }
-          ]
-        }
-      ],
-      '/web/react/': [
-        {
-          text: 'React基础',
-          collapsed: true,
-          items: [
-            { text: 'React18 Hooks API', link: '/web/react/react18-hooks-api' },
-            { text: '学习记录', link: '/web/react/React18学习记录' }
-          ]
-        }
-      ]
+      '/web/js-ts': js_ts$sidebar,
+      '/web/vue/': vue$sidebar,
+      '/web/react/': react$sidebar
     },
 
     // socialLinks: [
@@ -67,5 +45,8 @@ export default defineConfig({
     footer: {
       copyright: 'Copyright © 2024-present Frank'
     }
+  },
+  markdown: {
+    lineNumbers: true
   }
 });
