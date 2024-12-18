@@ -3,7 +3,7 @@
 layout: home
 
 hero:
-  name: 'Frank的文档博客'
+  name: 'Frank的技术文档'
   text: 持续学习，无限进步
   tagline: 好记性不如烂笔头
   image:

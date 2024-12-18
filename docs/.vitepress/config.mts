@@ -18,7 +18,7 @@ export default defineConfig({
       {
         text: '前端',
         items: [
-          { text: 'JS & TS', link: '/web/js-ts/首页白屏问题' },
+          { text: 'JS & TS', link: '/web/js-ts/手写EventBus' },
           { text: 'Vue', link: '/web/vue/Vue基础' },
           { text: 'React', link: '/web/react/react18-hooks-api' }
         ]
