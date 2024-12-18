@@ -12,18 +12,34 @@ export default defineConfig({
     outline: { label: '目录', level: [2, 6] },
     nav: [
       { text: '首页', link: '/' },
-      { text: 'Vue', link: '/vue/测试' },
+      {
+        text: '前端',
+        items: [
+          { text: 'Vue', link: '/web/vue/测试' },
+          { text: 'React', link: '/web/react/react18-hooks-api' }
+        ]
+      },
       { text: '个人信息', link: '/resume' }
     ],
 
     sidebar: {
-      '/vue/': [
+      '/web/vue/': [
         {
           text: 'Vue记录',
           collapsed: true,
           items: [
-            { text: '测试', link: '/vue/测试' },
-            { text: '学习记录', link: '/vue/Vue3学习记录' }
+            { text: '测试', link: '/web/vue/测试' },
+            { text: '学习记录', link: '/web/vue/Vue3学习记录' }
+          ]
+        }
+      ],
+      '/web/react/': [
+        {
+          text: 'React记录',
+          collapsed: true,
+          items: [
+            { text: 'React18 Hooks API', link: '/web/react/react18-hooks-api' },
+            { text: '学习记录', link: '/web/react/React18学习记录' }
           ]
         }
       ]
