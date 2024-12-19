@@ -53,7 +53,7 @@ console.log(friendsIterator.next()); // { done: true, value: undefined }
   - 当一个对象实现了`iterable protocol`协议时，它就是一个可迭代对象；
   - 这个对象的要求是必须实现`@@iterator`方法，在代码中我们使用`Symbol.iterator`访问该属性；
 
-- 当我们要问一个问题，我们转成这样的一个东西有什么好处呢？
+- 我们转成这样的一个东西有什么好处呢？
   - 当一个对象变成一个可迭代对象的时候，进行某些迭代操作，比如`for...of`操作时，其实就会调用它的`@@iterator`方法；
 
 ### 可迭代对象的代码

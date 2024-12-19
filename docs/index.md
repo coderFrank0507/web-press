@@ -12,7 +12,7 @@ hero:
   actions:
     - theme: brand
       text: 建站原因
-      link: /reason
+      link: /建站原因
 
 features:
   - title: 💡 小建议
