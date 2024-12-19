@@ -4,6 +4,7 @@ const baseUrl = '/web/vue';
 
 const vue$sidebar: DefaultTheme.SidebarItem[] = [
   { text: 'Vue基础', link: `${baseUrl}/Vue基础` },
+  { text: 'ElementPlus颜色工具', link: `${baseUrl}/ElementPlus颜色工具` },
   {
     text: 'Vue进阶',
     collapsed: false,
