@@ -10,7 +10,7 @@ const vue$sidebar: DefaultTheme.SidebarItem[] = [
     collapsed: false,
     items: [
       { text: '使用冻结对象提升效率', link: `${baseUrl}/使用冻结对象提升效率` },
-      { text: 'Vue3学习记录', link: `${baseUrl}/Vue3学习记录` }
+      { text: 'Proxy比defineProperty到底好在哪', link: `${baseUrl}/Proxy比defineProperty到底好在哪` }
     ]
   }
 ];

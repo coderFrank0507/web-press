@@ -48,7 +48,7 @@ console.log(generator.next()); // { value: 300, done: false }
 console.log(generator.next()); // { value: undefined, done: true }
 ```
 
-### 生成器传递参数 – next 函数
+### 传递参数 – next 函数
 
 - 函数既然可以暂停来分段执行，那么函数应该是可以传递参数的，我们是否可以给每个分段来传递参数呢？
   - 答案是可以的；
@@ -72,7 +72,7 @@ const result3 = generator.next(result2.value);
 console.log('result3:', result3); // { value: 'frankaaabbbccc', done: false }
 ```
 
-### 生成器提前结束 – return 函数
+### 提前结束 – return 函数
 
 - 还有一个可以给生成器函数传递参数的方法是通过`return`函数：
   - `return`传值后这个生成器函数就会结束，之后调用`next`不会继续生成值了；
@@ -91,7 +91,7 @@ console.log(generator.return(123)); // { value: 123, done: true }
 console.log(generator.next()); // { value: undefined, done: true }
 ```
 
-### 生成器抛出异常 – throw 函数
+### 抛出异常 – throw 函数
 
 - 除了给生成器函数内部传递参数之外，也可以给生成器函数内部抛出异常：
   - 抛出异常后我们可以在生成器函数中捕获异常；
