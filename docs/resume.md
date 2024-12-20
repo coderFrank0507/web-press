@@ -4,68 +4,57 @@
 
 姓名：王一飞
 
-出生年月：1997-05-07
-
 前端开发经验：4年
 
-## 技能介绍 :eyes:
+## 职业技能 :eyes:
 
-* 熟悉 HTML，CSS，JavaScript，TypeScript，Vue2，Vue3，React18 以及相关生态，可自主搭建前端项目框架。
-
-* 熟悉前端常用组件库 Element UI / Plus、Ant design、Echarts、VueUse、Ahooks、Loadsh、Dayjs 等第三方工具库。
-
-* 有微信小程序原生代码开发，uni-app 跨端开发相关经验。
-
-* 有 Nodejs、Mysql 数据库开发经验，可独自编写测试接口。
-
-* 熟悉 Git 代码管理、项目协同
-
-
-
-## 工作经历
-
-### 晶品科技股份有限公司 :rocket:
-
-*2023.03 - 2024.12*
-
-**河北省档案馆电子档案管理项目**
-
-**主要技术栈：** 微前端、TS、React 18、Antd
-
-**我的主要任务：** 基于antd组件库，二次开发并维护项目中通用公共组件，编写对应 markdown 文档。完成日常业务需求。
-
-**基础组件：** 高级表单、高级表格、高级搜索（普通条件检索 + 前端可视化生成SQL查询语句）、穿梭框、可编辑拖拽树、ECharts二次封装等。
-
-**业务组件：** 实时聊天窗（websocket）、列表 网格拖拽排序、附件上传下载（可分片上传）、文件流直接导出本地、html文件预览、页面级组件，根据配置生成多表格信息展示。
-
-> [!NOTE] 
->
-> 入职前一直使用 vue 生态技术，入职后两周熟悉 react 和 ts 使用，并快速积累 react + ts 开发相关规范，帮助团队封装常用基础组件，业务组件、页面级组件，提高团队开发效率。
+- **HTML/CSS：** HTML5、CSS3、Less、Scss，rem、em、vw、vh、媒体查询
+- **JavaScrip/TypeScript：** JavaScrip、TypeScirpt、ES6+、Promise、async/await、Proxy、模块化等
+- **Vue.js：** Vue2、Vue3、Vue Router、Vuex/Pinia、Composition API。常用库：Element UI/Plus、Vant、Vue Use等
+- **React.js：** React18、React Router、Hooks API、Ant Design、Zustand、ahooks等
+- **可视化开发：** Echarts
+- **微信小程序/跨端开发：** 原生小程序开发、uniapp
+- **构建工具：** Webpack、Vite、Rollup
+- **代码规范：** EsLint、Prettier、
+- **源代码管理：** Git
+- **服务器开发：** Node.js、Koa框架，MySQL数据库
 
 
 
-### 河北安创网络科技有限公司 :rocket:
+## 项目经历 :rocket:
 
-*2022.09 - 2023.01*
+### --- 河北省档案馆电子档案管理项目 ---
 
-负责公司自研安全生产管理系统项目，根据甲方需求定制功能，主要以收集生产过程当中产生的各类数据进行汇总，前端工作多为表单页面或数据统计页面、可视化大屏。技术栈主要以 vue 全家桶，也有过老项目 jsp 的开发经历。
+**技术栈：** React18、TypeScirpt、React Router、Axios、Ant Design、Jotai、Zustand、dnd-kit、ahooks、Echarts、styled-compoents、scss、微前端（micro-app）
 
-1、根据 ui 设计稿完成页面搭建
+**主要任务：** 基于antd组件库，二次开发并维护项目所需的通用型基础组件组件，基于业务逻辑深度定制的高阶组件，编写对应 markdown 文档。完成日常业务需求。
 
-2、根据分配到的需求按时完成任务
+**主要业绩：** 
+- **基础组建：** 高级表单、高级表格、高级检索（普通条件检索 + 前端可视化生成SQL查询语句）、穿梭框、可编辑拖拽树、ECharts二次封装等。
+- **业务组件：** 实时聊天窗、列表 网格拖拽排序、附件上传下载（可分片上传）、html文件预览、文件流直接导出本地、页面级组件，根据配置生成多表格信息展示。
 
-3、自测功能，修复测试过程中的bug
 
-### 河北热点科技股份有限公司 :rocket:
+### --- 技术博客 + 后台管理系统 ---
 
-*2021.03 - 2022.08*
+**技术栈：**
+- 前端：Vue3、TypeScirpt、Vue Router、Pinia、Element Plus、Axios、prismjs、v-md-editor
+- 后端：Nodejs、MySQL、Koa 框架、koa-router、jsonwebtoken、mysql2、snowflake-id、nodemon
 
-根据 UI 设计图，完成页面布局与功能的开发工作，城镇乡村等全景图的制作，大屏可视化项目，后台管理系统，技术栈有 html、css、js、jquery、vue 2，krpano，echarts ，高德地图、百度地图 等。独立完成整个前端项目，web端，小程序，可视化大屏，企业网站等。高阶组件封装，减少代码冗余，提高开发效率。
+**项目描述：** 独自完成整个项目，主要用于技术文档管理，后端使用nodejs实现用户登录、jwt验证、菜单权限、动态字典、自定义查询数据库工具函数（sql语句的生成）。前端使用vue3从零搭建后台管理框架、用户信息加密传输、动态注册路由、axios二次封装、markdown语法实时展示、代码块高亮等。
 
-主要任务：
+**项目部署：** 阿里云CentOS系统、域名申请、Jenkins自动化部署。
 
-1、多个基于 vue 、echart 的数据大屏项目，通过 vue 组件实现数据动态刷新渲染，内部图表可实现自由替换，数据轮播，数据类型分类展示等功能。动态适配不同分辨率屏幕 。
+### --- 乡村振兴企业站点 + 后台管理系统 ---
 
-2、独立完成框架搭建。根据后端菜单列表等信息，动态注册对应路由。页面模块化抽取，Echarts 、WangEditor、以及整体项目公共组件的封装。JS工具函数的封装等。
+**技术栈：** Vue2、Vue Router、Vuex、Axios、Element UI、Echarts、WangEditor、Swiper、krpano
 
-3、微信小程序原生代码，担任整个项目开发。新闻资讯浏览，用户个人信息设置，信息发布，任务申报流程功能。
+**项目描述：**
+- 后台管理：从零搭建系统框架，实现用户账号密码加密传输，根据用户权限动态注册路由，根据用户信息加载不同主题配置，按钮级权限控制，Echarts图表二次封装，新闻信息管理，用户附件上传下载。
+- 网站：根据UI设计图搭建网站布局，制作全景图，数据可视化页面。
+- 可视化页面：根据设计图利用Echarts完成各种图表样式，使用flexible.js + postcss实现页面根据屏幕分辨率（主要是pc端屏幕和笔记本屏幕会产生区别）实时改变元素大小，保证了不同屏幕，尤其是笔记本屏幕开启缩放后，页面显示比例仍保持一致。
+
+### --- 乡村振兴小程序 ---
+
+**技术栈：** 原生小程序开发
+
+**主要任务：** 从零搭建项目，优化首屏渲染，合理使用setData、进行渲染性能优化，设计用户信息发布、申请流程交互，用户搜索联想词防抖优化，资源加载优化
