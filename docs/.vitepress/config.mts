@@ -6,7 +6,7 @@ import react$sidebar from './sidebar/react';
 // https://vitepress.dev/reference/site-config
 export default defineConfig({
   // base: '/vite-press-docs/',
-  head: [['link', { rel: 'icon', href: '/vite-press-docs/img/favicon.ico' }]],
+  head: [['link', { rel: 'icon', href: '/img/favicon.ico' }]],
   title: 'Frank',
   description: '持续学习，无限进步',
   themeConfig: {
