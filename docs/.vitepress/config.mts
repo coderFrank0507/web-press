@@ -1,7 +1,11 @@
 import { defineConfig } from 'vitepress';
-import js_ts$sidebar from './sidebar/js-ts';
-import vue$sidebar from './sidebar/vue';
-import react$sidebar from './sidebar/react';
+import { BASE_URL_js_ts, BASE_URL_network, BASE_URL_react, BASE_URL_vue } from './base_url';
+import sidebar_js_ts from './sidebar/js-ts';
+import sidebar_vue from './sidebar/vue';
+import sidebar_react from './sidebar/react';
+import sidebar_network from './sidebar/network';
+import ViteConfig from './vite-config';
+import NavConfig from './nav';
 
 // https://vitepress.dev/reference/site-config
 export default defineConfig({
@@ -10,26 +14,15 @@ export default defineConfig({
   title: 'Frank',
   description: '持续学习，无限进步',
   themeConfig: {
-    // https://vitepress.dev/reference/default-theme-config
     logo: '/img/favicon.ico',
     outline: { label: '目录', level: [2, 6] },
-    nav: [
-      { text: '首页', link: '/' },
-      {
-        text: '前端',
-        items: [
-          { text: 'JS & TS', link: '/web/js-ts/手写EventBus' },
-          { text: 'Vue', link: '/web/vue/Vue基础' },
-          { text: 'React', link: '/web/react/react18-hooks-api' }
-        ]
-      },
-      { text: '个人信息', link: '/resume' }
-    ],
+    nav: NavConfig,
 
     sidebar: {
-      '/web/js-ts': js_ts$sidebar,
-      '/web/vue/': vue$sidebar,
-      '/web/react/': react$sidebar
+      [BASE_URL_js_ts]: sidebar_js_ts,
+      [BASE_URL_vue]: sidebar_vue,
+      [BASE_URL_react]: sidebar_react,
+      [BASE_URL_network]: sidebar_network
     },
 
     // socialLinks: [
@@ -48,5 +41,7 @@ export default defineConfig({
   },
   markdown: {
     lineNumbers: true
-  }
+  },
+
+  vite: ViteConfig
 });
