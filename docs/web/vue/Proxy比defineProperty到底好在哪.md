@@ -1,6 +1,4 @@
-### 对比原因
-
-都说`vue3`的`Proxy`效率要远远高于`vue2`的`defineProperty`，但是具体是为什么呢？今天就从源码的角度来分析一下。
+# Proxy比defineProperty到底好在哪
 
 ### 分析
 

@@ -704,11 +704,3 @@ export default App;
 ```tsx
 useLayoutEffect(callback, deps);
 ```
-
-::: info
-问：既然 useEffect 会执行两次渲染，导致回流和重绘，相比之下， useLayoutEffect 的效果要更好，那么为什么都用 useEffect 而不用 useLayoutEffect 呢？
-
-答：根本原因还是同步和异步，虽然 useLayoutEffect 只会渲染一次，但切记，它是同步，类比于 Class 组件中，它更像 componentDidMount，因为它们都是同步执行。既然是同步，就有可能阻塞浏览器的渲染，而 useEffect 是异步的，并不会阻塞渲染。
-
-最后，即使 useEffect 要渲染两次，但从效果上来看，变换的时间非常短，这样情况下，也无所谓，除非闪烁、突兀的感觉非常明显，才会去考虑使用 useLayoutEffect 去解决。
-:::
