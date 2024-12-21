@@ -7,24 +7,12 @@ hero:
   text: 持续学习，无限进步
   tagline: 好记性不如烂笔头
   image:
-    src: /img/vampire.png
-    atl: vampire
+    src: /img/xiaoxin.png
+    atl: xiaoxin
   actions:
     - theme: brand
       text: 建站原因
       link: /建站原因
-
-features:
-  - icon:
-      src: /img/Ninja.gif
-    title: 🖥 代码
-    details: 
-  - icon:
-      src: /img/SpiderMan.gif
-    title: ⚖️ 梦想
-    details: 
-  - icon:
-      src: /img/SuperMan.gif
-    title: 🚀 未来
-    details: 
 ---
+
+<p align="center"><img src="/img/friends.jpg" alt="banner" /></p>

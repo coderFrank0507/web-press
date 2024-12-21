@@ -14,7 +14,7 @@ export default defineConfig({
   title: 'Frank',
   description: '持续学习，无限进步',
   themeConfig: {
-    logo: '/img/favicon.ico',
+    logo: '/img/logo.png',
     outline: { label: '目录', level: [2, 6] },
     nav: NavConfig,
 
