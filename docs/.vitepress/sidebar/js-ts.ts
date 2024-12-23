@@ -25,7 +25,10 @@ const sidebar_js_ts: DefaultTheme.SidebarItem[] = [
   {
     text: '优化',
     collapsed: false,
-    items: [{ text: '首页白屏问题', link: `${BASE_URL_js_ts}/首页白屏问题` }]
+    items: [
+      { text: '首页白屏问题', link: `${BASE_URL_js_ts}/首页白屏问题` },
+      { text: '并发请求', link: `${BASE_URL_js_ts}/并发请求` },
+    ]
   }
 ];
 
