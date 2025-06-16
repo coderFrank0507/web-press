@@ -48,7 +48,7 @@ export default App;
 
 **效果：**
 
-<video src="/react/setState01.mov" width="400" muted autoplay="autoplay" loop="loop"></video>
+<video src="/react/react18-hooks-api/setState01.mov" width="400" muted autoplay="autoplay" loop="loop"></video>
 
 **注意：** `useState`有点类似于`PureComponent`，它会进行一个比较浅的比较，这就导致了一个问题，如果只是修改对象的某个属性，并不会实时更新。
 
@@ -90,7 +90,7 @@ export default App;
 
 **效果：**
 
-<video src="/react/setState02.mov" width="400" muted autoplay="autoplay" loop="loop"></video>
+<video src="/react/react18-hooks-api/setState02.mov" width="400" muted autoplay="autoplay" loop="loop"></video>
 
 ## 2. useEffect
 
@@ -147,7 +147,7 @@ export default App;
 
 **效果：**
 
-<video src="/react/setState03.mov" width="400" muted autoplay="autoplay" loop="loop"></video>
+<video src="/react/react18-hooks-api/setState03.mov" width="400" muted autoplay="autoplay" loop="loop"></video>
 
 **依赖变化：**
 
@@ -187,7 +187,7 @@ export default App;
 
 **效果：**
 
-<video src="/react/setState04.mov" width="400" muted autoplay="autoplay" loop="loop"></video>
+<video src="/react/react18-hooks-api/setState04.mov" width="400" muted autoplay="autoplay" loop="loop"></video>
 
 **无限执行：**
 
@@ -222,7 +222,7 @@ export default App;
 
 **效果：**
 
-<video src="/react/setState05.mov" width="400" muted autoplay="autoplay" loop="loop"></video>
+<video src="/react/react18-hooks-api/setState05.mov" width="400" muted autoplay="autoplay" loop="loop"></video>
 
 ## 3. useContext
 
@@ -290,7 +290,7 @@ export default App;
 
 **效果：**
 
-<video src="/react/setState06.mov" width="400" muted autoplay="autoplay" loop="loop"></video>
+<video src="/react/react18-hooks-api/setState06.mov" width="400" muted autoplay="autoplay" loop="loop"></video>
 
 ## 4. useReducer
 
@@ -361,7 +361,7 @@ export default App;
 
 **效果：**
 
-<video src="/react/setState07.mov" width="400" muted autoplay="autoplay" loop="loop"></video>
+<video src="/react/react18-hooks-api/setState07.mov" width="400" muted autoplay="autoplay" loop="loop"></video>
 
 **特别注意：** 在`reducer`中，如果返回的`state`和之前的`state`值相同，那么组件将不会更新。
 
@@ -405,7 +405,7 @@ export default App;
 
 **效果：**
 
-<video src="/react/setState08.mov" width="400" muted autoplay="autoplay" loop="loop"></video>
+<video src="/react/react18-hooks-api/setState08.mov" width="400" muted autoplay="autoplay" loop="loop"></video>
 
 可以看到，当 count 无变化时，子组件并不会更新。
 
@@ -465,7 +465,7 @@ export default App;
 
 **效果：**
 
-<video src="/react/setState09.mov" width="400" muted autoplay="autoplay" loop="loop"></video>
+<video src="/react/react18-hooks-api/setState09.mov" width="400" muted autoplay="autoplay" loop="loop"></video>
 
 可以看到，当点击按钮后，会打印我是`usePow`，这样就会产生开销。毫无疑问，这种开销并不是我们想要见到的结果，所以有了`useMemo`。 并用它进行如下改造：
 
@@ -484,7 +484,7 @@ const usePow = (list: number[]) => {
 
 **效果：**
 
-<video src="/react/setState10.mov" width="400" muted autoplay="autoplay" loop="loop"></video>
+<video src="/react/react18-hooks-api/setState10.mov" width="400" muted autoplay="autoplay" loop="loop"></video>
 
 ## 6. useCallback
 
@@ -549,7 +549,7 @@ export default App;
 
 简要说明下，`TestButton`里是个按钮，分别存放着有无`useCallback`包裹的函数，在父组件`Index`中有一个`flag`变量，这个变量同样与`count`无关，那么切换按钮的时候，`TestButton`的执行如下：
 
-<video src="/react/setState11.mov" width="400" muted autoplay="autoplay" loop="loop"></video>
+<video src="/react/react18-hooks-api/setState11.mov" width="400" muted autoplay="autoplay" loop="loop"></video>
 
 可以看到，切换`flag`的时候，没有经过`useCallback`的函数会再次执行，而包裹的函数并没有执行（点击“普通点击”按钮的时候，`useCallback`的依赖项`count`发生了改变，所以会打印出`useCallback`点击）。
 
@@ -624,7 +624,7 @@ export default App;
 
 **效果：**
 
-<video src="/react/setState12.mov" width="400" muted autoplay="autoplay" loop="loop"></video>
+<video src="/react/react18-hooks-api/setState12.mov" width="400" muted autoplay="autoplay" loop="loop"></video>
 
 ## 8. useImperativeHandle
 
@@ -687,7 +687,7 @@ export default App;
 
 **效果：**
 
-<video src="/react/setState13.mov" width="400" muted autoplay="autoplay" loop="loop"></video>
+<video src="/react/react18-hooks-api/setState13.mov" width="400" muted autoplay="autoplay" loop="loop"></video>
 
 **forwardRef：** 引用传递，是一种通过组件向子组件自动传递引用`ref`的技术。对于应用者的大多数组件来说没什么作用，但对于一些重复使用的组件，可能有用。
 

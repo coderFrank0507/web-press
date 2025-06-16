@@ -7,7 +7,8 @@ const NavConfig: DefaultTheme.NavItem[] = [
     items: [
       { text: 'JS & TS', link: '/web/js-ts/手写EventBus' },
       { text: 'Vue', link: '/web/vue/Vue基础' },
-      { text: 'React', link: '/web/react/react18-hooks-api' }
+      { text: 'React', link: '/web/react/react18-hooks-api' },
+      { text: 'Dart', link: '/web/dart/安装'}
     ]
   },
   { text: '网络相关', link: '/network/DNS解析的过程' },

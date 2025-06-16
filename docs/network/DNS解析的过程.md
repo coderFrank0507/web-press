@@ -2,7 +2,7 @@
 
 #### 示意图
 
-![DNS解析](/network/nxhk.jpg)
+![DNS解析](/network/DNS解析的过程/nxhk.jpg)
 
 #### DNS（Domain Name System）服务器解析过程
 
@@ -23,7 +23,7 @@
 
 **IP 地址的获取：** 最终，权威域名服务器会提供www.example.com域名对应的IP地址（如图中的93.184.216.34），这个信息会被发送回用户的电脑。
 
-<p  align="center"><img alt="DNS解析" src="/network/nxhk01.jpg" width="450" /></p>
+<p  align="center"><img alt="DNS解析" src="/network/DNS解析的过程/nxhk01.jpg" width="450" /></p>
 
 **缓存结果：** 一旦 IP 地址被找到，它通常会被存储在浏览器、操作系统、路由器或 ISP 的 DNS 缓存中，以便未来的查询可以更快得到解析。
 
@@ -49,7 +49,7 @@
 
 ##### HTTP 工作流程如下：
 
-<p  align="center"><img alt="DNS解析" src="/network/nxhk02.jpg" width="400" /></p>
+<p  align="center"><img alt="DNS解析" src="/network/DNS解析的过程/nxhk02.jpg" width="400" /></p>
 
 - 客户端请求：
   - 一旦 TCP 连接建立，客户端（通常是 Web 浏览器）就可以通过**这个连接**发送一个`HTTP`请求到服务器。
