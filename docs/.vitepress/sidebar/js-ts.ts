@@ -3,6 +3,10 @@ import { BASE_URL_js_ts } from '../base_url';
 
 const sidebar_js_ts: DefaultTheme.SidebarItem[] = [
   {
+    text: '事件循环（渡一）',
+    link: `${BASE_URL_js_ts}/事件循环（渡一）`
+  },
+  {
     text: '手写EventBus',
     link: `${BASE_URL_js_ts}/手写EventBus`
   },
