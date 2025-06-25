@@ -5,7 +5,7 @@ const NavConfig: DefaultTheme.NavItem[] = [
   {
     text: '前端',
     items: [
-      { text: 'JS & TS', link: '/web/js-ts/手写EventBus' },
+      { text: 'JS & TS', link: '/web/js-ts/事件循环（渡一）' },
       { text: 'Vue', link: '/web/vue/Vue基础' },
       { text: 'React', link: '/web/react/react18-hooks-api' },
       { text: 'Dart', link: '/web/dart/安装'}
