@@ -1,4 +1,4 @@
-export const BASE_URL_js_ts = '/web/js-ts';
+export const BASE_URL_basic = '/web/basic';
 
 export const BASE_URL_vue = '/web/vue';
 
