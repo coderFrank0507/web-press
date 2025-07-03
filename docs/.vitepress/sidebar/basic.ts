@@ -11,6 +11,10 @@ const sidebar_js_ts: DefaultTheme.SidebarItem[] = [
     link: `${BASE_URL_basic}/浏览器是如何渲染页面的`
   },
   {
+    text: '原型链的全貌',
+    link: `${BASE_URL_basic}/原型链的全貌`
+  },
+  {
     text: '手写EventBus',
     link: `${BASE_URL_basic}/手写EventBus`
   },
