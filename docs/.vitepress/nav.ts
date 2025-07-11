@@ -8,7 +8,7 @@ const NavConfig: DefaultTheme.NavItem[] = [
       { text: '基础', link: '/web/basic/事件循环（渡一）' },
       { text: 'Vue', link: '/web/vue/Vue基础' },
       { text: 'React', link: '/web/react/react18-hooks-api' },
-      { text: 'Dart', link: '/web/dart/安装'}
+      { text: 'Flutter', link: '/web/flutter/安装'}
     ]
   },
   { text: '网络相关', link: '/network/DNS解析的过程' },
