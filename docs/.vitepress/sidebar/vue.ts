@@ -3,6 +3,7 @@ import { BASE_URL_vue } from '../base_url';
 
 const sidebar_vue: DefaultTheme.SidebarItem[] = [
   { text: 'Vue基础', link: `${BASE_URL_vue}/Vue基础` },
+  { text: 'Diff算法', link: `${BASE_URL_vue}/Diff算法` },
   { text: 'vue3.5更新了哪些新功能', link: `${BASE_URL_vue}/vue3.5更新了哪些新功能`},
   { text: 'ElementPlus颜色工具', link: `${BASE_URL_vue}/ElementPlus颜色工具` },
   {
