@@ -1,5 +1,5 @@
 import { DefaultTheme } from 'vitepress';
-import { BASE_URL_vue } from '../base_url';
+import { BASE_URL_vue, BASE_URL_vue_source } from '../base_url';
 
 const sidebar_vue: DefaultTheme.SidebarItem[] = [
   { text: 'Vue基础', link: `${BASE_URL_vue}/Vue基础` },
@@ -12,6 +12,13 @@ const sidebar_vue: DefaultTheme.SidebarItem[] = [
     items: [
       { text: '使用冻结对象提升效率', link: `${BASE_URL_vue}/使用冻结对象提升效率` },
       { text: 'Proxy比defineProperty到底好在哪', link: `${BASE_URL_vue}/Proxy比defineProperty到底好在哪` }
+    ]
+  },
+  {
+    text: '源码篇',
+    collapsed: false,
+    items: [
+      { text: '框架搭建', link: `${BASE_URL_vue_source}/框架搭建` }
     ]
   }
 ];
