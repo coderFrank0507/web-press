@@ -1,11 +1,13 @@
-export const BASE_URL_basic = '/web/basic';
+export const URL_basic = '/web/basic';
 
-export const BASE_URL_vue = '/web/vue';
+export const URL_engineering = '/web/engineering';
 
-export const BASE_URL_vue_source = "/web/vue/source";
+export const URL_vue = '/web/vue';
 
-export const BASE_URL_react = '/web/react';
+export const URL_vue_source = '/web/vue/source';
 
-export const BASE_URL_flutter = '/web/flutter';
+export const URL_react = '/web/react';
 
-export const BASE_URL_network = '/network';
+export const URL_flutter = '/web/flutter';
+
+export const URL_network = '/network';

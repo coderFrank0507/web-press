@@ -1,6 +1,7 @@
 import { defineConfig } from 'vitepress';
-import { BASE_URL_basic, BASE_URL_network, BASE_URL_react, BASE_URL_vue, BASE_URL_flutter } from './base_url';
+import { URL_basic, URL_network, URL_react, URL_vue, URL_flutter, URL_engineering } from './base_url';
 import sidebar_basic from './sidebar/basic';
+import sidebar_engineering from './sidebar/engineering'
 import sidebar_vue from './sidebar/vue';
 import sidebar_react from './sidebar/react';
 import sidebar_network from './sidebar/network';
@@ -20,11 +21,12 @@ export default defineConfig({
     nav: NavConfig,
 
     sidebar: {
-      [BASE_URL_basic]: sidebar_basic,
-      [BASE_URL_vue]: sidebar_vue,
-      [BASE_URL_react]: sidebar_react,
-      [BASE_URL_network]: sidebar_network,
-      [BASE_URL_flutter]: sidebar_flutter
+      [URL_basic]: sidebar_basic,
+      [URL_engineering]: sidebar_engineering,
+      [URL_vue]: sidebar_vue,
+      [URL_react]: sidebar_react,
+      [URL_network]: sidebar_network,
+      [URL_flutter]: sidebar_flutter,
     },
 
     // socialLinks: [

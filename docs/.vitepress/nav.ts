@@ -6,6 +6,7 @@ const NavConfig: DefaultTheme.NavItem[] = [
     text: '前端',
     items: [
       { text: '基础', link: '/web/basic/事件循环（渡一）' },
+      { text: '工程化', link: '/web/engineering/工程化概述' },
       { text: 'Vue', link: '/web/vue/Vue基础' },
       { text: 'React', link: '/web/react/react18-hooks-api' },
       { text: 'Flutter', link: '/web/flutter/安装'}
