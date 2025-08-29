@@ -51,14 +51,6 @@ watch(foo, /* ... */);
 watch(() => foo, /* ... */);
 ```
 
-此外，当我们需要传递解构的 prop 到外部函数中并保持响应性时，这是推荐做法：
-
-```js
-useComposable(() => foo);
-```
-
-外部函数可以调用 getter (或使用 [toValue](https://cn.vuejs.org/api/reactivity-utilities.html#tovalue) 进行规范化) 来追踪提供的 prop 变更。例如，在计算属性或侦听器的 getter 中。
-
 ## useId()
 
 用于为无障碍属性或表单元素生成每个应用内唯一的 ID。
