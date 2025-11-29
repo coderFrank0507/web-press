@@ -13,10 +13,10 @@ import NavConfig from './nav';
 export default defineConfig({
   // base: '/vite-press-docs/',
   head: [['link', { rel: 'icon', href: '/img/favicon.ico' }]],
-  title: 'Frank',
+  // title: 'F',
   description: '持续学习，无限进步',
   themeConfig: {
-    logo: '/img/logo.png',
+    // logo: '/img/logo.png',
     outline: { label: '目录', level: [2, 6] },
     nav: NavConfig,
 
