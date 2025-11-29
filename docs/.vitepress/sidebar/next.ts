@@ -6,7 +6,10 @@ const sidebar_network: DefaultTheme.SidebarItem[] = [
 	{
 		text: "路由",
 		collapsed: false,
-		items: [{ text: "App Router", link: `${URL_next}/AppRouter` }],
+		items: [
+			{ text: "App Router", link: `${URL_next}/AppRouter` },
+			{ text: "路由导航", link: `${URL_next}/路由导航` },
+		],
 	},
 ];
 
