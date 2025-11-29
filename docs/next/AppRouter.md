@@ -54,66 +54,73 @@ app
 app/blog/layout.tsx
 
 ```tsx
-'use client' //需要交互的地方要改为客户端组件 默认是服务端组件
-import { useState } from "react"
-export default function BlogLayout({ children }: { children: React.ReactNode }) {
-    const [count, setCount] = useState(0)
-    return (
-        <div>
-            <h1>Blog Layout 布局组件</h1>
-            <button onClick={() => setCount(count + 1)}>+1</button>
-            <h1>数量： {count}</h1>
-            <hr />
-            {children}
-        </div>
-    )
+"use client"; // 需要使用hook的地方要改为客户端组件
+import { useState } from "react";
+import type { PropsWithChildren } from "react";
+
+export default function BlogLayout({ children }: PropsWithChildren) {
+  const [count, setCount] = useState(0);
+  return (
+    <div id="layout">
+      <h1>Blog Layout 布局组件</h1>
+      <button onClick={() => setCount(count + 1)}>+1</button>
+      <h1>数量： {count}</h1>
+      <hr />
+      {children}
+    </div>
+  );
 }
 ```
 
 app/blog/template.tsx
 
 ```tsx
-'use client' //需要交互的地方要改为客户端组件 默认是服务端组件
-import { useState } from "react"
-export default function BlogTemplate({ children }: { children: React.ReactNode }) {
-    const [count, setCount] = useState(0)
-    return (
-        <div>
-            <h1>Blog Template</h1>
-            <button onClick={() => setCount(count + 1)}>+1</button>
-            <h1>数量： {count}</h1>
-            <hr />
-            {children}
-        </div>
-    )
+"use client"; // 需要使用hook的地方要改为客户端组件
+import { useState } from "react";
+import type { PropsWithChildren } from "react";
+
+export default function BlogTemplate({ children }: PropsWithChildren) {
+  const [count, setCount] = useState(0);
+  return (
+    <div id="template">
+      <h1>Blog Template</h1>
+      <button onClick={() => setCount(count + 1)}>+1</button>
+      <h1>数量： {count}</h1>
+      <hr />
+      {children}
+    </div>
+  );
 }
+
 ```
 
 app/blog/a/page.tsx
 
 ```tsx
-import Link from "next/link"
-export default function APage() {
-    return (
-        <div>
-            <h1>A Page</h1>
-            <Link href="/blog/b">跳转B</Link>
-        </div>
-    )
+import Link from "next/link";
+
+export default async function APage() {
+  return (
+    <div>
+      <h1>A Page</h1>
+      <Link href="/blog/b">跳转B</Link>
+    </div>
+  );
 }
 ```
 
 app/blog/b/page.tsx
 
 ```tsx
-import Link from "next/link"
+import Link from "next/link";
+
 export default function BPage() {
-    return (
-        <div>
-            <h1>B Page</h1>
-            <Link href="/blog/a">跳转A</Link>
-        </div>
-    )
+  return (
+    <div>
+      <h1>B Page</h1>
+      <Link href="/blog/a">跳转A</Link>
+    </div>
+  );
 }
 ```
 
@@ -121,7 +128,7 @@ export default function BPage() {
 
 
 
-#### loading(加载)
+#### loading（加载）
 
 Next.js的loading是借助了`Suspense`实现的，Suspense的具体用法请参考[Suspense 组件](https://zh-hans.react.dev/reference/react/Suspense)
 
@@ -129,11 +136,11 @@ app/blog/loading.tsx
 
 ```tsx
 export default function Loading() {
-    return (
-        <div>
-            <h1>Loading...</h1>
-        </div>
-    )
+  return (
+    <div>
+      <h1>Loading...</h1>
+    </div>
+  )
 }
 ```
 
@@ -150,14 +157,14 @@ const getData = async () => {
   })
 }
 export default async function APage() {
-    const data = await getData()
-    console.log(data)
-    return (
-        <div>
-            <h1>A Page</h1>
-            <Link href="/blog/b">跳转B</Link>
-        </div>
-    )
+  const data = await getData()
+  console.log(data)
+  return (
+    <div>
+      <h1>A Page</h1>
+      <Link href="/blog/b">跳转B</Link>
+    </div>
+  )
 }
 ```
 
@@ -174,11 +181,11 @@ app/blog/error.tsx
 ```tsx
 'use client' //错误组件必须是客户端组件
 export default function Error() {
-    return (
-        <div>
-            <h1>Error</h1>
-        </div>
-    )
+  return (
+    <div>
+      <h1>Error</h1>
+    </div>
+  )
 }
 ```
 
@@ -187,14 +194,14 @@ app/blog/a/page.tsx
 ```tsx
 import Link from "next/link"
 export default async function APage() {
-   //遇到异常会自动跳转到error组件
-    throw new Error("错误")
-    return (
-        <div>
-            <h1>A Page</h1>
-            <Link href="/blog/b">跳转B</Link>
-        </div>
-    )
+  //遇到异常会自动跳转到error组件
+  throw new Error("错误")
+  return (
+    <div>
+      <h1>A Page</h1>
+      <Link href="/blog/b">跳转B</Link>
+    </div>
+  )
 }
 ```
 
@@ -210,11 +217,11 @@ app/not-found.tsx
 
 ```tsx
 export default function NotFound() {
-    return (
-        <div>
-            <h1>404 Page</h1>
-        </div>
-    )
+  return (
+    <div>
+      <h1>404 Page</h1>
+    </div>
+  )
 }
 ```
 
