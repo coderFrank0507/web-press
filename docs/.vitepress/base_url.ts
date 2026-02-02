@@ -1,4 +1,4 @@
-export const URL_basic = '/web/basic';
+export const URL_javascript = '/web/javascript';
 export const URL_vue = '/web/vue';
 export const URL_vue_source = '/web/vue/source';
 export const URL_react = '/web/react';

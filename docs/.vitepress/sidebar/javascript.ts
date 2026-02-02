@@ -1,0 +1,47 @@
+import { DefaultTheme } from 'vitepress';
+import { URL_javascript } from '../base_url';
+
+const sidebar_js_ts: DefaultTheme.SidebarItem[] = [
+  {
+    text: '事件循环（渡一）',
+    link: `${URL_javascript}/事件循环（渡一）`
+  },
+  {
+    text: '浏览器是如何渲染页面的',
+    link: `${URL_javascript}/浏览器是如何渲染页面的`
+  },
+  {
+    text: '原型链的全貌',
+    link: `${URL_javascript}/原型链的全貌`
+  },
+  {
+    text: '手写EventBus',
+    link: `${URL_javascript}/手写EventBus`
+  },
+  {
+    text: '手写Promise',
+    link: `${URL_javascript}/手写Promise`
+  },
+  {
+    text: '常用工具函数',
+    link: `${URL_javascript}/常用工具函数`
+  },
+  {
+    text: '迭代器-Iterator',
+    link: `${URL_javascript}/迭代器-Iterator`
+  },
+  {
+    text: '生成器-Generator',
+    link: `${URL_javascript}/生成器-Generator`
+  },
+  {
+    text: '优化',
+    collapsed: false,
+    items: [
+      { text: '首页白屏问题', link: `${URL_javascript}/首页白屏问题` },
+      { text: '并发请求', link: `${URL_javascript}/并发请求` },
+    ]
+  }
+];
+
+export default sidebar_js_ts;

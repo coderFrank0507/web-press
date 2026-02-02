@@ -1,6 +1,6 @@
 import { defineConfig } from 'vitepress';
-import { URL_basic, URL_network, URL_react, URL_vue, URL_flutter, URL_next } from './base_url';
-import sidebar_basic from './sidebar/basic';
+import { URL_javascript, URL_network, URL_react, URL_vue, URL_flutter, URL_next } from './base_url';
+import sidebar_javascript from './sidebar/javascript';
 import sidebar_vue from './sidebar/vue';
 import sidebar_react from './sidebar/react';
 import sidebar_network from './sidebar/network';
@@ -21,7 +21,7 @@ export default defineConfig({
     nav: NavConfig,
 
     sidebar: {
-      [URL_basic]: sidebar_basic,
+      [URL_javascript]: sidebar_javascript,
       [URL_vue]: sidebar_vue,
       [URL_react]: sidebar_react,
       [URL_network]: sidebar_network,
