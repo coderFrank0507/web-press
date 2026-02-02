@@ -35,6 +35,10 @@ const sidebar_js_ts: DefaultTheme.SidebarItem[] = [
     link: `${URL_javascript}/生成器-Generator`
   },
   {
+    text: '数组去重',
+    link: `${URL_javascript}/数组去重`
+  },
+  {
     text: '优化',
     collapsed: false,
     items: [
